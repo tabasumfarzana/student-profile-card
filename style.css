@@ -1,0 +1,406 @@
+/* Google Font */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Body */
+
+body{
+
+    background:linear-gradient(135deg,#d9ecff,#f0e5ff);
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+}
+
+/* Main Container */
+
+.container{
+
+    width:1100px;
+
+}
+
+/* Heading */
+
+.heading{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.heading h1{
+
+    font-size:42px;
+
+    color:#243b7a;
+
+    margin-bottom:8px;
+
+}
+
+.heading p{
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+/* Layout */
+
+.wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+/* Left Card */
+
+.form-box{
+
+    width:380px;
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+
+}
+
+.form-box h2{
+
+    color:#234b8b;
+
+    margin-bottom:20px;
+
+}
+
+label{
+
+    display:block;
+
+    margin-top:15px;
+
+    font-weight:600;
+
+    color:#333;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    margin-top:6px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+input:focus{
+
+    border-color:#00bcd4;
+
+    box-shadow:0 0 8px rgba(0,188,212,.4);
+
+}
+
+/* Color Preview */
+
+.color-box{
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+
+}
+
+.color-box input{
+
+    flex:1;
+
+}
+
+#colorPreview{
+
+    width:45px;
+
+    height:45px;
+
+    background:black;
+
+    border-radius:8px;
+
+    border:2px solid #ddd;
+
+}
+
+/* Buttons */
+
+button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    margin-top:15px;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+.createBtn{
+
+    background:#006d77;
+
+}
+
+.themeBtn{
+
+    background:#4323a8;
+
+}
+
+.hideBtn{
+
+    background:#c99700;
+
+}
+
+.resetBtn{
+
+    background:#8d1111;
+
+}
+
+/* Right Profile Card */
+
+.profile-card{
+
+    width:420px;
+
+    background:#f8f0ff;
+
+    border:2px solid #65d6e5;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    padding:30px;
+
+    transition:.4s;
+
+}
+
+/* Profile Image */
+
+.profile-image{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid white;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+
+    margin-bottom:20px;
+
+}
+
+.profile-card h2{
+
+    color:#222;
+
+    margin-bottom:25px;
+
+}
+
+/* Information Box */
+
+.info-box{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:white;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 10px rgba(0,0,0,.08);
+
+}
+
+.item i{
+
+    color:#584bb3;
+
+    width:20px;
+
+}
+
+/* Extra */
+
+.extra{
+
+    margin-top:25px;
+
+    color:#555;
+
+}
+
+/* Dark Mode */
+
+.dark-mode{
+
+    background:#111827;
+
+}
+
+.dark-mode .heading h1{
+
+    color:white;
+
+}
+
+.dark-mode .heading p{
+
+    color:#ddd;
+
+}
+
+.dark-mode .form-box{
+
+    background:#1f2937;
+
+}
+
+.dark-mode .form-box h2,
+
+.dark-mode label{
+
+    color:white;
+
+}
+
+.dark-mode input{
+
+    background:#374151;
+
+    color:white;
+
+    border:1px solid #555;
+
+}
+
+.dark-mode .profile-card{
+
+    background:#1f2937;
+
+    color:white;
+
+}
+
+.dark-mode .item{
+
+    background:#374151;
+
+    color:white;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.wrapper{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.form-box,
+
+.profile-card{
+
+    width:100%;
+
+    max-width:420px;
+
+}
+
+}

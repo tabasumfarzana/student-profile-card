@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Card</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Heading -->
+    <div class="heading">
+
+        <h1>
+            <i class="fa-solid fa-graduation-cap"></i>
+            Student Profile Card
+        </h1>
+
+        <p>Create your beautiful student profile</p>
+
+    </div>
+
+    <div class="wrapper">
+
+        <!-- LEFT SIDE -->
+
+        <div class="form-box">
+
+            <h2>Enter Your Details</h2>
+
+            <label>Full Name</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name">
+
+            <label>Age</label>
+            <input
+                type="number"
+                id="age"
+                placeholder="Enter your age">
+
+            <label>Email</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email">
+
+            <label>Favourite Subject</label>
+            <input
+                type="text"
+                id="subject"
+                placeholder="Favourite subject">
+
+            <label>Profile Photo</label>
+            <input
+                type="file"
+                id="photo"
+                accept="image/*">
+
+            <label>Favourite Color</label>
+
+            <div class="color-box">
+
+                <input
+                    type="text"
+                    id="color"
+                    placeholder="Blue, Red, Green">
+
+                <div id="colorPreview"></div>
+
+            </div>
+
+            <button id="createBtn" class="createBtn">
+                <i class="fa-solid fa-user"></i>
+                Create Profile
+            </button>
+
+            <button id="themeBtn" class="themeBtn">
+                <i class="fa-solid fa-moon"></i>
+                Change Theme
+            </button>
+
+            <button id="hideBtn" class="hideBtn">
+                <i class="fa-solid fa-eye-slash"></i>
+                Hide Profile
+            </button>
+
+            <button id="resetBtn" class="resetBtn">
+                <i class="fa-solid fa-rotate"></i>
+                Reset
+            </button>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="profile-card" id="profileCard">
+
+            <img
+                src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                class="profile-image"
+                id="profileImage">
+
+            <h2 id="profileName">Student Name</h2>
+
+            <div class="info-box">
+
+                <div class="item">
+                    <i class="fa-solid fa-user"></i>
+                    <span id="profileNameText">Your Name</span>
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <span id="profileAge">Age</span>
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span id="profileEmail">Email</span>
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-book"></i>
+                    <span id="profileSubject">Favourite Subject</span>
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-palette"></i>
+                    <span id="profileColor">Favourite Color</span>
+                </div>
+
+            </div>
+
+            <div class="extra">
+
+                <p id="todayDate"></p>
+
+                <p id="greeting"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
+
